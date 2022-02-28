@@ -53,6 +53,16 @@
 
 /* -----------Mobile----------------- */
 @media only screen and (max-width: 739px){
+    .preference span:last-child{
+        display: block;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-title{
+        width: 90%;
+    }
     .events, .games{
         padding: 0 20px 80px;
     }

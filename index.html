@@ -671,6 +671,8 @@
     
         const menuBtn = document.querySelector(".menu")
         const closeMenuBtn = document.querySelector(".close-menu")
+        const menuNavTitle = document.querySelectorAll(".menu-nav__title")
+        const menuNavWrapper = document.querySelectorAll(".menu-nav__wrapper")
 
 
         const scrollTopBtn = document.querySelector(".scroll")
@@ -728,6 +730,12 @@
             modal.classList.remove('show-menu')
 
         }
+
+        menuNavTitle.forEach((item, id) => {
+            item.onclick = function() {
+                menuNavWrapper[id].classList.toggle("active")
+            }
+        })
 
 
 
